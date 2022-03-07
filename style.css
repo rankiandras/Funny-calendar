@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /* ------------------------ END of CSS Reset---------------------- */
+  
+  
+  
+  .card {
+    width: 1000px;
+    height: 100vh;
+    margin: 50px auto 80px;
+    font-size: 40px;
+  }
+  
+  .header {
+    text-align: left;
+  }
+  
+  .header time:nth-child(1) {
+    margin-right: 30px;
+  }
+  
+  section time {
+    position: relative;
+  }
+  
+  .onclicked {
+    /* position: relative; */
+    animation-name: funny;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-image: url(https://i.pinimg.com/originals/ab/8c/2b/ab8c2ba1687110a825651152f050c0c5.png);
+    background-size: contain;
+  }
+  
+  @keyframes funny {
+    0%   {background-color:red; transform: skew(20deg,20deg);}
+    10%  {background-color:yellow; transform: skew(-20deg,-20deg);}
+    20%  {background-color:blue; transform: skew(20deg,20deg);}
+    30%  {background-color:green; transform: skew(-20deg,-20deg);}
+    40% {background-color:red; transform: skew(20deg,20deg);}
+    50% {background-color:white; transform: skew(20deg,20deg);}
+    60% {background-color:yellow; transform: skew(-20deg,-20deg);}
+    70% {background-color:blue; transform: skew(20deg,20deg);}
+    80% {background-color:green; transform: skew(-20deg,-20deg);}
+    90% {background-color:red; transform: skew(20deg,20deg);}
+    100% {background-color:white;}
+  }
+  
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  section {
+    margin-top: 100px;
+  }
+  
+  
+  #January {
+    display: block;
+  }
+  
+  #January time {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    #January time {
+      background-color: aquamarine;
+      border: none;
+    }
+  }
+  
+  
+  #February {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #February time {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 25%;
+  }
+  
+  @media all and (max-width: 1000px) {
+    #February time {
+      background-color: pink;
+      border: dashed;
+    }
+  }
+  
+  #March {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
+  #March time {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 0 75%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    #March time {
+      background-color: magenta;
+      border: dotted;
+      opacity: 0.7;
+    }
+  }
+  
+  
+  #April {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  #April time {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 90% 5%;
+  }
+  
+  @media all and (max-width: 800px) {
+    #April time {
+      background-color: gray;
+      border: 5px dotted yellow;
+    }
+  }
+  
+  
+  #May {
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  
+  #May time {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 40% 40%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    #May time {
+      background-color: aquamarine;
+      border: 3px solid violet;
+    }
+  }
+  
+  
+  #root div:nth-child(6) .header{
+    text-align: right;
+  }
+  
+  #June {
+    height: 700px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  
+  
+  
+  #June time {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #June time {
+      background-color: deepskyblue;
+      border: 10px dotted navajowhite;
+    }
+  }
+  
+  
+  #July {
+    display: grid;
+    grid-template-columns: 10% 20% 30% 1fr;
+    grid-template-rows: repeat(8, 50px);
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+  
+  #July time {
+    border: 1px solid black;
+    border-radius: 30%;
+  }
+  
+  @media all and (max-width: 550px) {
+    #July {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    #July time {
+      border: none;
+      background-color: bisque;
+    }
+  }
+  
+  
+  #August {
+    display: grid;
+    grid-template-columns: 1fr 30% 20% 10%;
+    grid-template-rows: repeat(8, 50px);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  
+  #August time {
+    border: 1px solid black;
+    border-radius: 25px;
+  }
+  
+  @media all and (max-width: 550px) {
+    #August {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    #August time {
+      border: 2px dashed black;
+      background-color: goldenrod;
+    }
+  }
+  
+  #September {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(8, 40px);
+    column-gap: 50px;
+    row-gap: 30px;
+  }
+  
+  #September time{
+    border: 1px solid black;
+    border-radius: 40px 5px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #September {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      row-gap: 60px;
+    }
+    #September time {
+      border: none;
+      background-color: bisque;
+    }
+  }
+  
+  
+  #October {
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(6, 60px);
+    row-gap: 70px;
+    column-gap: 70px;
+  }
+  
+  #October time {
+    border: 1px solid black;
+    border-radius: 50% 50% 0 0;
+  }
+  
+  @media all and (max-width: 450px) {
+    #October {
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(8, 40px);
+    }
+    #October time {
+      border: 1px, solid black;
+      background-color: skyblue;
+    }
+  }
+  
+  
+  #November {
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(6, 60px);
+    row-gap: 50px;
+    column-gap: 90px;
+  }
+  
+  #November time {
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #November time {
+      border: none;
+      background-color: coral;
+    }
+  }
+  
+  
+  #December {
+    display: grid;
+    grid-template-columns: repeat(7, 130px);
+    grid-template-rows: repeat(6, 80px);
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+  
+  #December time {
+    border: 1px solid black;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  @media all and (max-width: 700px) {
+    #December {
+      background-color: forestgreen;
+      border-radius: 0 0 65% 0;
+    }
+    #December time {
+      border: 1px solid black;
+      background-color: red;
+      opacity: 0.6;
+    }
+  }
+  
